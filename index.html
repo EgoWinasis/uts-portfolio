@@ -181,7 +181,7 @@
 
         <div class="col-sm-4 my-3">
           <div class="card">
-            <img src="assets/img/1.jpg" class="card-img-top" >
+            <img src="assets/img/1.jpg" class="card-img-top">
             <div class="card-body">
               <h6 class="card-text text-center">Desain 3D Dapur Rumah</h6>
             </div>
@@ -189,7 +189,7 @@
         </div>
         <div class="col-sm-4 my-3">
           <div class="card">
-            <img src="assets/img/2.png" class="card-img-top" >
+            <img src="assets/img/2.png" class="card-img-top">
             <div class="card-body">
               <h6 class="card-text text-center">Desain Poster</h6>
             </div>
@@ -257,74 +257,110 @@
   </section>
   <!-- akhir portfolio -->
 
-    <!-- contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-12">
-                  <h2 class="text-center my-3">Contact</h2>
-                  <hr>
-              </div>
-          </div>
-
-          <div class="row justify-content-center">
-              <div class="col-md-8 col-sm-offset-2">
-                  <form>
-                      <div class="form-group">
-                          <label for="nama">Nama</label>
-                          <input type="text" id="nama" class="form-control" placeholder="Masukan nama">
-                      </div>
-
-                      <div class="form-group">
-                          <label for="email">Email</label>
-                          <input type="email" id="email" class="form-control" placeholder="Masukan email">
-                      </div>
-
-                      <div class="form-group">
-                          <label for="telp">No. Handphone</label>
-                          <input type="tel" id="telp" class="form-control" placeholder="Masukan no. handphone">
-                      </div>
-                      <select class="form-control my-3">
-                          <option>--Pilih Kategori--</option>
-                          <option>Web Development</option>
-                          <option>Network Administrator</option>
-                          <option>3D & 2D Design</option>
-                      </select>
-                      <div class="form-group">
-                          <label for="pesan">Pesan</label>
-                          <textarea id="pesan" rows="10" class="form-control" placeholder="Tulis pesan"></textarea>
-                      </div>
-
-                      <button type="submit" class="btn btn-primary my-4 ">Kirim Pesan</button>
-                  </form>
-
-              </div>
-          </div>
+  <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-center my-3">Contact</h2>
+          <hr>
+        </div>
       </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-offset-2">
+          <div class="alert my-alert alert-success d-none mt-2 alert-dismissible fade show" role="alert">
+            <strong>Terima Kasih</strong> Pesan Anda sudah terkirim
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="submit-to-google-sheet">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukan nama">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Masukan email">
+            </div>
+
+            <div class="form-group">
+              <label for="telp">No. Handphone</label>
+              <input type="tel" id="telp" name="hp" class="form-control" placeholder="Masukan no. handphone">
+            </div>
+            <select class="form-control my-3" name="kategori">
+              <option>--Pilih Kategori--</option>
+              <option>Web Development</option>
+              <option>Network Administrator</option>
+              <option>3D & 2D Design</option>
+            </select>
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" rows="10" name="pesan" class="form-control" placeholder="Tulis pesan"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary my-4 btn-kirim ">Kirim Pesan</button>
+            <button class="btn btn-primary btn-loading my-4 d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
   </section>
   <!-- akhir contact -->
 
 
   <!-- footer -->
   <footer>
-      <div class="container text-center">
-          <div class="col item social">
-              <a href="https://m.facebook.com/EgoWinasis/" target="blank"><i class="fa fa-facebook fa-lg"></i></a>
-              <a href="https://mobile.twitter.com/EgoWinasis" target="blank"><i class="fa fa-twitter fa-lg"></i></a>
-              <a href="https://youtube.com/channel/UCGPU9gQBMjw7Pc6GVcU_0BA" target="blank"><i class="fa fa-youtube fa-lg"></i></a>
-              <a href="https://m.instagram.com/EgoWinasis/" target="blank"><i class="fa fa-instagram fa-lg"></i></a>
-              <a href="https://github.com/EgoWinasis" target="blank"><i class="fa fa-github fa-lg"></i></a>
-          </div>
-          <p>&copy; Copyright 2022 | <a href="">Ego Winasis</a>.</p>
+    <div class="container text-center">
+      <div class="col item social">
+        <a href="https://m.facebook.com/EgoWinasis/" target="blank"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="https://mobile.twitter.com/EgoWinasis" target="blank"><i class="fa fa-twitter fa-lg"></i></a>
+        <a href="https://youtube.com/channel/UCGPU9gQBMjw7Pc6GVcU_0BA" target="blank"><i
+            class="fa fa-youtube fa-lg"></i></a>
+        <a href="https://m.instagram.com/EgoWinasis/" target="blank"><i class="fa fa-instagram fa-lg"></i></a>
+        <a href="https://github.com/EgoWinasis" target="blank"><i class="fa fa-github fa-lg"></i></a>
       </div>
+      <p>&copy; Copyright 2022 | <a href="">Ego Winasis</a>.</p>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="assets/portfolio/js/jquery-3.1.1.min.js"></script>
-  <script src="assets/portfolio/js/jquery.easing.1.3.js"></script>
-  <script src="assets/portfolio/js/myscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzPajFfwKGH3s-53jpCivJ4VNToFkZ3ipIkw6DDcTnY5qvqqEeQGlY9P_MDzqvOLUdqUw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+          })
+          .then(response => {
+
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            myAlert.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response)
+
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/portfolio/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/portfolio/js/jquery.easing.1.3.js"></script>
+    <script src="assets/portfolio/js/myscript.js"></script>
 
 </body>
 
